@@ -1,0 +1,46 @@
+{
+  "name": "coa-redis-cache",
+  "version": "0.0.0",
+  "description": "redis cache component for coa",
+  "keywords": [
+    "coajs",
+    "coa",
+    "redis",
+    "cache"
+  ],
+  "license": "MIT",
+  "author": "Aex",
+  "homepage": "https://github.com/coajs/coa-redis-cache",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coajs/coa-redis-cache.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc && cp package.json *.md dist/lib",
+    "lint": "eslint .",
+    "prettier": "prettier -w .",
+    "sync": "curl -X PUT 'https://npm.taobao.org/sync/coa-redis-cache?sync_upstream=true'"
+  },
+  "dependencies": {
+    "@types/ioredis": "^4.26.4",
+    "@types/mocha": "^8.2.2",
+    "coa-echo": "^1.1.1",
+    "coa-error": "^1.5.2",
+    "coa-helper": "^1.2.1",
+    "ioredis": "^4.27.6"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.19",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "chai": "^4.3.4",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard-with-typescript": "^20.0.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "mocha": "^9.0.1",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.4"
+  }
+}
